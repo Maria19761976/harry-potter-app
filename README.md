@@ -53,7 +53,8 @@ src/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/harry-potter-app.git
+   git clone https://github.com/Maria19761976/harry-potter-app
+cd harry-potter-app
    cd harry-potter-app
    ```
 
