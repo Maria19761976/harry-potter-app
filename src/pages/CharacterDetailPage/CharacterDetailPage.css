@@ -1,0 +1,138 @@
+.detail-page {
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.detail-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.detail-page__back:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.detail-page__card {
+  background: linear-gradient(145deg, rgba(26, 10, 0, 0.95), rgba(45, 21, 0, 0.95));
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 500px;
+}
+
+.detail-page__image-wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.detail-page__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.detail-page__placeholder {
+  font-size: 6rem;
+  opacity: 0.4;
+}
+
+.detail-page__info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-page__name {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #d4af37;
+  margin: 0 0 0.5rem;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.detail-page__divider {
+  border: none;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  margin: 0.5rem 0;
+}
+
+.detail-page__field {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.detail-page__label {
+  color: rgba(232, 213, 163, 0.5);
+  min-width: 130px;
+  flex-shrink: 0;
+}
+
+.detail-page__value {
+  color: #e8d5a3;
+  font-weight: 500;
+}
+
+.detail-page__badge {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.detail-page__badge--alive {
+  background: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+  border: 1px solid #4caf50;
+}
+
+.detail-page__badge--deceased {
+  background: rgba(244, 67, 54, 0.2);
+  color: #e57373;
+  border: 1px solid #f44336;
+}
+
+.detail-page__loading,
+.detail-page__not-found {
+  text-align: center;
+  padding: 4rem;
+  color: #e8d5a3;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .detail-page {
+    padding: 1rem;
+  }
+
+  .detail-page__card {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-page__image-wrapper {
+    min-height: 300px;
+  }
+
+  .detail-page__name {
+    font-size: 1.5rem;
+  }
+}
