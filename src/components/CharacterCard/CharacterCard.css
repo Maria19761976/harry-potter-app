@@ -1,0 +1,98 @@
+.character-card {
+  background: linear-gradient(145deg, rgba(26, 10, 0, 0.9), rgba(45, 21, 0, 0.9));
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-card:hover {
+  transform: translateY(-6px);
+  border-color: #d4af37;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.character-card__image-wrapper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease;
+}
+
+.character-card:hover .character-card__image {
+  transform: scale(1.05);
+}
+
+.character-card__placeholder {
+  font-size: 4rem;
+  opacity: 0.5;
+}
+
+.character-card__body {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.character-card__name {
+  color: #d4af37;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+.character-card__house {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.character-card__house--gryffindor { color: #ff6b6b; }
+.character-card__house--slytherin  { color: #4caf7d; }
+.character-card__house--ravenclaw  { color: #6fa8dc; }
+.character-card__house--hufflepuff { color: #f6d860; }
+.character-card__house--default    { color: #aaa; }
+
+.character-card__meta {
+  color: rgba(232, 213, 163, 0.7);
+  font-size: 0.8rem;
+}
+
+.character-card__badge {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.character-card__badge--alive {
+  background: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+  border: 1px solid #4caf50;
+}
+
+.character-card__badge--deceased {
+  background: rgba(244, 67, 54, 0.2);
+  color: #e57373;
+  border: 1px solid #f44336;
+}
