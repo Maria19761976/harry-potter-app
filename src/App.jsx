@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './pages/HomePage/HomePage';
 import CharacterDetailPage from './pages/CharacterDetailPage/CharacterDetailPage';
@@ -6,7 +6,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/houses" element={<HomePage />} />
         <Route path="/character/:name" element={<CharacterDetailPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
